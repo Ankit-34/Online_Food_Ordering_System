@@ -1,0 +1,108 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(21, 21, 21, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner{
+    position: relative;
+    padding: 32px;
+    width: 60%;
+    max-width: 400px;
+    background-color: white;
+}
+
+.popup-inner .close-btn{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.title{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+
+/* popup login css */
+
+.popup_login, .popup_signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+    font-weight: 900;
+    width: 100%;
+}
+
+.popup_login label, .popup_signup label{
+    width: 4rem;
+    min-width: 5rem;
+    font-size: 1.2rem;
+}
+
+.popup_login input, .popup_signup input{
+    margin: .1%;
+    border: 2px solid grey;
+    border-radius: 2px;
+    min-width: 5rem;
+    width: 13rem;
+    height: 2rem;
+}
+
+.b_outer, .b_outer_s{
+    align-items: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.b_otp, .b_otp_s{
+    background-color: rgb(246, 82, 82);
+    color: white;
+    min-width: 6.5rem;
+    width: fit-content;
+    font-size: .9em;
+    border: 2px solid rgb(247, 233, 233);
+    border-radius: 3px;
+    display: grid;
+    margin-top: 5%;
+    cursor: pointer;
+    padding: .5rem;
+    align-self: center;
+    /* transform: translateX(80%); */
+}
+
+.donot, .donot_s{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.1rem;
+    position: relative;
+    text-align: center;
+}
+
+/* login popup */
+@media only screen and (max-width: 490px) {
+    .popup_login, .popup_signup{
+        display: flex;
+        flex-direction: column;
+    }
+    .popup_login input, .popup_signup input{
+        max-width: 7rem;
+    }
+}
