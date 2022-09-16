@@ -47,16 +47,6 @@ nav h3 {
     display: none;
 }
 
-/* @media (max-width: 952px) {
-    nav h3 {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    .nav li {
-        font-size: 16px;
-    }
-} */
-
 @media (max-width: 858px) {
     .checkbtn {
         display: block;

@@ -11,8 +11,9 @@
 }
 
 .popup-inner{
+    border-radius: 5px;
     position: relative;
-    padding: 10px;
+    padding: 15px;
     width: 60%;
     max-width: 400px;
     background-color: white;
@@ -76,8 +77,8 @@
 .b_otp, .b_otp_s{
     background-color: rgb(246, 82, 82);
     color: white;
-    min-width: 6.5rem;
-    width: fit-content;
+    min-width: 6rem;
+    width: 18rem;
     font-size: .9em;
     border: 2px solid rgb(247, 233, 233);
     border-radius: 3px;
@@ -92,6 +93,7 @@
 
 .donot, .donot_s{
     /* margin: 1rem; */
+    /* width: 100%; */
     width: 100%;
     font-size: 1.1rem;
     /* color: red; */
@@ -112,6 +114,6 @@
         flex-direction: column;
     }
     .popup_login input, .popup_signup input{
-        max-width: 7rem;
+        max-width: 70%;
     }
 }
