@@ -33,10 +33,10 @@ const Signup = () => {
               </div>
 
               <p className="donot_s">
-                <p>
+                {/* <p> */}
                   Already have an account?  
-                </p>
-                <a href="/#"> Login Now </a>
+                {/* </p> */}
+                Login Now
               </p>
             </PopUp>
       </div>

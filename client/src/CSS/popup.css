@@ -83,6 +83,7 @@
     border-radius: 3px;
     display: grid;
     margin-top: 5%;
+    /* margin-bottom: 5%; */
     cursor: pointer;
     padding: .5rem;
     align-self: center;
@@ -90,11 +91,12 @@
 }
 
 .donot, .donot_s{
-    margin-top: 1rem;
+    /* margin: 1rem; */
     width: 100%;
     font-size: 1.1rem;
+    /* color: red; */
     /* position: relative; */
-    display: inline;
+    /* display: inline; */
     text-align: center;
     /* margin-top: 10px; */
     padding: 20px;
