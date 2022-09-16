@@ -21,15 +21,15 @@ const Login = () => {
                   <input type="tel" id="phone" name="phone" required />
                 </div>
                 
-            <div className="b_outer">
-              <button className='b_otp'>Send One Time Password</button>
-            </div>
+                <div className="b_outer">
+                  <button className='b_otp'>Send One Time Password</button>
+                </div>
 
                 <p className='donot'>
-                  <p>
                     Don't have an account? 
-                  </p>
-                  <a href='/#'> Create One Now </a>
+                    {/* <br /> */}
+                    Click me
+                  {/* <a href='/#'> Create One Now </a> */}
                 </p>
               </PopUp>
         </div>

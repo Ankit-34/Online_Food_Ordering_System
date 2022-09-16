@@ -7,6 +7,10 @@ const Navbar = () => {
   return (
     <>
       <nav className="navBar">
+        <input type="checkbox" id="check" />
+        <label for="check" className="checkbtn">
+          <i className="fas fa-bars"></i>
+        </label>
         <h3> LOGO </h3>
         <ul className="nav">
             <li className="home">Home</li>

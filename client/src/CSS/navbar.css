@@ -1,29 +1,82 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.navBar{
-    background-color: rgbA(0,0,0, 0.6);
+.navBar {
+    background-color: rgba(256, 256, 256, 0.7);
     /* display: flex; */
     font-size: 19px;
     width: 100%;
-    height: 50px;
+    height: 70px;
+    position: absolute;
+    top: 0;
 }
 
-nav h3{
+nav h3 {
     float: left;
+    padding: 0 10px;
     margin: 10px;
 }
 
-.nav{
+.nav {
     list-style: none;
-    display: flex;
     float: right;
-    margin: 5px;
+    margin-right: 20px;
+    margin: 10px;
 }
 
-.nav li{
-    margin: 10px;
+.nav li {
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    nav h3 {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .nav li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    .nav {
+        position: fixed;
+        width: 30%;
+        height: 37vh;
+        background: grey;
+        top: 60px;
+        /* left: -100%; */
+        right: 100rem;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    .nav li {
+        display: block;
+    }
+    #check:checked~ul {
+        right: -2.5%;
+    }
 }
