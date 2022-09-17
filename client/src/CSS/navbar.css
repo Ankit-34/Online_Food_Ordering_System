@@ -53,8 +53,8 @@ nav h3 {
     }
     .nav {
         position: fixed;
-        width: 30%;
-        height: 37vh;
+        width: 16rem;
+        height: 17rem;
         background: grey;
         top: 60px;
         /* left: -100%; */

@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import Login from './component/LogIn/Login.jsx';
-import BackImg from './component/BackImg/backImg.jsx';
-// import Signup from './component/SignUp/Signup.jsx';
-import Navbar from './component/NavBar/Navbar.jsx'
+// import BackImg from './component/BackImg/backImg.jsx';
+import Navbar from './component/NavBar/Navbar.jsx';
+import Slider from './component/Slider/Slider.jsx';
+// import 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-    <BackImg />
+    <Slider />
 
-    <Navbar />  
+    <Navbar />
+    
   </React.StrictMode>
 );
 
