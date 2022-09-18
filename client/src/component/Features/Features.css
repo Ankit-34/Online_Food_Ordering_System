@@ -1,0 +1,45 @@
+.feature_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Feature img{
+    width: 90px;
+    margin: 5px;
+}
+
+/* Title */
+.Feature b{
+    display: block;
+    font-size: 1.3rem;
+    padding: 10px;
+} 
+
+.Feature hr{
+    width: 85%;
+    text-align: center;
+    transform: translateX(10%);
+}
+
+/* Description */
+.Feature p{
+    font-size: 1.1rem;
+    padding: 10px;
+    width: 90%;
+    transform: translateX(6%);
+}
+
+@media (max-width: 580px) {
+    .feature_container{
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 360px) {
+    .feature_container{
+        grid-template-columns: auto;
+    }
+}
+

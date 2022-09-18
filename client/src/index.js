@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 // import BackImg from './component/BackImg/backImg.jsx';
 import Navbar from './component/NavBar/Navbar.jsx';
 import Slider from './component/Slider/Slider.jsx';
+import Features from './component/Features/Features.jsx';
 // import 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,11 +13,8 @@ root.render(
     <Slider />
 
     <Navbar />
-
-    <div className='hii'>
-
-      sdfghj
-    </div>
+    
+    <Features />
     
   </React.StrictMode>
 );
