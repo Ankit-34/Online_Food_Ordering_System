@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import data from '../../Data/Img_link_slider.js';
 import Btnslider from './Btnslider';
 import './Slider.css';
@@ -6,20 +6,26 @@ import './Slider.css';
 const Slider = () => {
 
     const [slideIndex, setSlideIndex] = useState(1);
-
+    
+    
+    
     const nextSlide = () => {
         if (slideIndex !== data.length)
-            setSlideIndex(slideIndex + 1)
+        setSlideIndex(slideIndex + 1)
         else if (slideIndex === data.length)
-            setSlideIndex(1)
+        setSlideIndex(1)
     }
-
+    
     const prevSlide = () => {
         if (slideIndex !== 1)
-            setSlideIndex(slideIndex - 1);
+        setSlideIndex(slideIndex - 1);
         else if (slideIndex === 1) setSlideIndex(data.length);
     }
-
+    // useEffect(() => {
+    //         nextSlide();
+    //     }, []);
+        
+    // setInterval(nextSlide, 3000);
     return <>
         <div className='container_slider'>
             {

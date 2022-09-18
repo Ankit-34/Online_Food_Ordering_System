@@ -12,6 +12,11 @@ root.render(
     <Slider />
 
     <Navbar />
+
+    <div className='hii'>
+
+      sdfghj
+    </div>
     
   </React.StrictMode>
 );

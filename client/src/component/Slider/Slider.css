@@ -1,19 +1,20 @@
 .slide{
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     position: absolute;
     opacity: 0;
     z-index: -111;
+    transition: opacity ease-in-out .5s !important;
 }
 
 .active-anim {
     opacity: 1;
+    position: static;
 }
 
 .back_img{
     width: 100%;
     height: 100vh;
-    object-fit: cover;
 }
 
 .btn-slide{
@@ -27,7 +28,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
- }
+}
 
 .next{
     top: 50%;
@@ -39,4 +40,36 @@
      top: 50%;
      left: 20px;
      transform: translateY(-60%);
+}
+@media (max-width: 580px){
+    .back_img{
+        height: 70vh;
+    }
+    .next, .prev{
+        top: 40%;
+    }
+}
+@media (max-width: 480px){
+    .back_img{
+        height: 60vh;
+    }
+    .next, .prev{
+        top: 35%;
+    }
+}
+@media (max-width: 380px){
+    .back_img{
+        height: 50vh;
+    }
+    .next, .prev{
+        top: 30%;
+    }
+}
+@media (max-width: 280px){
+    .back_img{
+        height: 40vh;
+    }
+    .next, .prev{
+        top: 25%;
+    }
 }
