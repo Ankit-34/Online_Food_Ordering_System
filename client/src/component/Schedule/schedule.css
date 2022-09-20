@@ -1,0 +1,119 @@
+.opening_hours {
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 40px;
+    column-gap: 8%;
+    width: 100%;
+    /* border: 5px solid red; */
+}
+
+.left_side {
+    width: 50%;
+    /* display: block; */
+    /* transform: translateX(5%); */
+}
+
+.left_side img {
+    width: 100%;
+    height: 330px;
+    /* display: block; */
+    filter: hue-rotate(180deg) saturate(2);
+    box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+
+.right_side {
+    width: 50%;
+    padding: 5px;
+    /* transform: translateX(25%); */
+}
+
+.right_side div{
+    background-color: rgb(214, 214, 244);
+    width: 100%;
+    min-width: 270px;
+}
+
+.right_side h2 {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 2px;
+    transition: all ease-in-out .8s;
+    height: 3.5rem;
+    justify-content: center;
+    transform: translateY(12%);  
+}
+
+.right_side h2:hover{
+    font-size: 27px;
+}
+
+.right_side ul{
+    /* display: block; */
+    width: 100%;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.table li {
+    width: 100%;
+    display: flex;
+}
+
+.table li span {
+    width: 15%;
+    min-width: 20px;
+    height: fit-content;
+    transform: translate(15%, 75%);
+}
+
+.pull-right {
+    width: 50%;
+    min-width: 150px;
+    transform: translateX(55%);
+    margin: 15px;
+    /* padding: 5px; */
+    text-align: left;
+}
+
+@media (max-width: 650px) {
+    .opening_hours {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    .opening_hours {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .left_side {
+        width: 80%;
+        /* transform: translateX(5%); */
+    }
+
+    .right_side{
+        width: 90%;
+    }
+    .right_side div{
+        min-width: 170px;
+    }
+
+    .pull-right{
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 310px){
+    .right_side div{
+        transform: translateY(-12%);
+        height: 80px;
+    }
+}

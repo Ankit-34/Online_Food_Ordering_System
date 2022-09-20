@@ -4,18 +4,23 @@ import ReactDOM from 'react-dom/client';
 import Navbar from './component/NavBar/Navbar.jsx';
 import Slider from './component/Slider/Slider.jsx';
 import Features from './component/Features/Features.jsx';
+import OurStory from './component/Our_Story/OurStory.jsx';
+import Schedule from './component/Schedule/Schedule.jsx';
 // import 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
     <Slider />
 
     <Navbar />
-    
+
     <Features />
-    
+
+    <OurStory />
+
+    <Schedule />
+
   </React.StrictMode>
 );
 
