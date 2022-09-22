@@ -6,6 +6,7 @@ import Slider from './component/Slider/Slider.jsx';
 import Features from './component/Features/Features.jsx';
 import OurStory from './component/Our_Story/OurStory.jsx';
 import Schedule from './component/Schedule/Schedule.jsx';
+import ItemCard from './component/ItemCard/ItemCard.jsx';
 // import 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,8 @@ root.render(
     <OurStory />
 
     <Schedule />
+
+    <ItemCard />
 
   </React.StrictMode>
 );
