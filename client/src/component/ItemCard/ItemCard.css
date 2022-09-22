@@ -132,7 +132,7 @@
     }
 }
 
-@media (max-width: 380px){
+@media (max-width: 600px){
     .card-container{
         width: 90%;
         padding: 0;
@@ -140,11 +140,18 @@
     }
     .best_dishes{
         width: 120%;
-        transform: translateX(-5%);
+        transform: translateX(-2%);
+    }
+    .dish_title{
+        transform: translate(5.5%);
     }
 }
 
 @media (max-width: 325px) {
+    .card-container{
+        width: 80%;
+        transform: translateX(5%);
+    }
     .card_wrap{
         width: 100%;
         transform: translateX(-0%);
