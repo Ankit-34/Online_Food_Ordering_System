@@ -1,0 +1,363 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container h4 {
+        /* text-align: center; */
+        width: fit-content;
+        margin-left: 600px;
+        /* border-bottom: 2px solid green; */
+    }
+
+    .image-icon {
+        margin-top: 50px;
+    }
+
+    .image-icon img {
+        margin: 80px;
+        margin-top: -15px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .item-list span {
+        text-align: center;
+    }
+
+    .Categories {
+        margin-top: 100px;
+        width: fit-content;
+        display: flex;
+    }
+
+    .Categories a {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+
+    .Categories a:hover {
+        color: #FE5F1E;
+    }
+
+    .left-side {
+        border-right: 2px solid rgb(220, 219, 219);
+        width: 17vw;
+        height: 100vh;
+        position: fixed;
+    }
+
+    .cate {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .box2 {
+        width: fit-content;
+        display: flex;
+        margin-left: 300px;
+    }
+
+    .box2 .image img {
+        width: 10vw;
+        height: 20vh;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+
+    .title {
+        width: 30vw;
+        width: 15hw;
+        margin-left: 15px;
+        font-size: 19px;
+    }
+
+    .data {
+        width: 20vw;
+    }
+
+    .data p {
+        text-align: left;
+    }
+
+    .pab {
+        display: flex;
+    }
+
+    .pab .price {
+        margin-left: 15px;
+    }
+
+    .pab .b {
+        margin-left: 15px;
+    }
+
+    .data .description {
+        width: 30vw;
+        margin-left: 15px;
+    }
+
+    .data button {
+        margin-left: 15px;
+    }
+
+    .b {
+        background-color: #55d686;
+        color: #fbfafa;
+        border-radius: 10px;
+        width: 3vw;
+        text-align: center;
+        height: 35px;
+    }
+
+    .offer {
+        width: fit-content;
+        position: fixed;
+        transform: translate(360%, -2%);
+    }
+
+    .i1 {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .i2 {
+        width: 300px;
+        height: 300px;
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="Categories">
+        <div class="left-side">
+            <div class="image-icon">
+                <img
+                    src="https://img.icons8.com/external-konkapp-outline-color-konkapp/64/000000/external-menu-cafe-konkapp-outline-color-konkapp.png" />
+            </div>
+            <div class="item-list">
+                <span class="cate" style="margin-top: -50px;">
+                    <h4><b>Categories</b></h4>
+                </span>
+                <span class="cate">
+                    <h6><a href="#id1">Sada Dosa</a></h6>
+                </span>
+                <span class="cate">
+                    <h6><a href="#id2">Masala Dosa</a></h6>
+                </span>
+                <span class="cate">
+                    <h6><a href="#id3">Rava Dosa</a></h6>
+                </span>
+                <span class="cate">
+                    <h6><a href="#id4">Chineese Fusion Dosa</a></h6>
+                </span>
+                <span class="cate">
+                    <h6><a href="#id5">Mumbai Street Dosa</a></h6>
+                </span>
+                <span class="cate">
+                    <h6><a href="#id6">Uthappam</a></h6>
+                </span>
+            </div>
+        </div>
+        <div class="container">
+            <h4 id="id1">Sada Dosa</h4>
+            <% items.forEach(function(item){if(item.catagory!='special' && item.catagory=='Sada Dosa'){%>
+                <div class="box2">
+                    <div class="image">
+                        <img src="/upload/<%=item.image%>" alt="">
+                    </div>
+                    <div class="data">
+                        <p class="title">
+                            <b>
+                                <%=item.name%>
+                            </b>
+                        </p>
+                        <div class="description">
+                            <%=item.description%>
+                        </div>
+                        <div class="pab">
+                            <p class="price">
+                            <h6 style="font-size: 18px;">Rs. <%=item.price%>
+                            </h6>
+                            </p>
+                        </div>
+                        <button data-item="<%=JSON.stringify(item)%>"
+                            class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add</span>
+                        </button>
+                    </div>
+                </div>
+                <hr style="width: 680px; margin-left: 310px;">
+                <%}})%>
+
+                    <h4 id="id2">Masala Dosa</h4>
+                    <% items.forEach(function(item){if(item.catagory!='special' && item.catagory=='Masala Dosa' ){%>
+                        <div class="box2">
+                            <div class="image">
+                                <img src="/upload/<%=item.image%>" alt="">
+                            </div>
+                            <div class="data">
+                                <p class="title">
+                                    <b>
+                                        <%=item.name%>
+                                    </b>
+                                </p>
+                                <div class="description">
+                                    <%=item.description%>
+                                </div>
+                                <div class="pab">
+                                    <p class="price">
+                                    <h6 style="font-size: 18px;">Rs. <%=item.price%>
+                                    </h6>
+                                    </p>
+                                </div>
+                                <button data-item="<%=JSON.stringify(item)%>"
+                                    class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                    <span>+</span>
+                                    <span class="ml-4">Add</span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr style="width: 680px; margin-left: 310px;">
+                        <%}})%>
+                            <h4 id="id3">Rava Dosa</h4>
+                            <% items.forEach(function(item){if(item.catagory!='special' && item.catagory=='Punjabi' ){%>
+                                <div class="box2">
+                                    <div class="image">
+                                        <img src="/uploads/<%=item.image%>" alt="">
+                                    </div>
+                                    <div class="data">
+                                        <p class="title">
+                                            <b>
+                                                <%=item.name%>
+                                            </b>
+                                        </p>
+                                        <div class="description">
+                                            <%=item.description%>
+                                        </div>
+                                        <div class="pab">
+                                            <p class="price">
+                                            <h6 style="font-size: 18px;">Rs. <%=item.price%>
+                                            </h6>
+                                            </p>
+                                        </div>
+                                        <button data-item="<%=JSON.stringify(item)%>"
+                                            class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                            <span>+</span>
+                                            <span class="ml-4">Add</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr style="width: 680px; margin-left: 310px;">
+                                <%}})%>
+                                    <h4 id="id4">Mumbai Street Dosa</h4>
+                                    <% items.forEach(function(item){if(item.catagory!='special' &&
+                                        item.catagory=='Spanish' ){%>
+                                        <div class="box2">
+                                            <div class="image">
+                                                <img src="/uploads/<%=item.image%>" alt="">
+                                            </div>
+                                            <div class="data">
+                                                <p class="title">
+                                                    <b>
+                                                        <%=item.name%>
+                                                    </b>
+                                                </p>
+                                                <div class="description">
+                                                    <%=item.description%>
+                                                </div>
+                                                <div class="pab">
+                                                    <p class="price">
+                                                    <h6 style="font-size: 18px;">Rs. <%=item.price%>
+                                                    </h6>
+                                                    </p>
+                                                </div>
+                                                <button data-item="<%=JSON.stringify(item)%>"
+                                                    class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                                    <span>+</span>
+                                                    <span class="ml-4">Add</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <hr style="width: 680px; margin-left: 310px;">
+                                        <%}})%>
+                                            <h4 id="id5">Chinese Fusion Dosa</h4>
+                                            <% items.forEach(function(item){if(item.catagory!='special' &&
+                                                item.catagory=='Chinese' ){%>
+                                                <div class="box2">
+                                                    <div class="image">
+                                                        <img src="/uploads/<%=item.image%>" alt="">
+                                                    </div>
+                                                    <div class="data">
+                                                        <p class="title">
+                                                            <b>
+                                                                <%=item.name%>
+                                                            </b>
+                                                        </p>
+                                                        <div class="description">
+                                                            <%=item.description%>
+                                                        </div>
+                                                        <div class="pab">
+                                                            <p class="price">
+                                                            <h6 style="font-size: 18px;">Rs. <%=item.price%>
+                                                            </h6>
+                                                            </p>
+                                                        </div>
+                                                        <button data-item="<%=JSON.stringify(item)%>"
+                                                            class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                                            <span>+</span>
+                                                            <span class="ml-4">Add</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <hr style="width: 680px; margin-left: 310px;">
+                                                <%}})%>
+                                                    <h4 id="id6">Uthappam</h4>
+                                                    <% items.forEach(function(item){if(item.catagory!='special' &&
+                                                        item.catagory=='Uthappam' ){%>
+                                                        <div class="box2">
+                                                            <div class="image">
+                                                                <img src="/uploads/<%=item.image%>" alt="">
+                                                            </div>
+                                                            <div class="data">
+                                                                <p class="title">
+                                                                    <b>
+                                                                        <%=item.name%>
+                                                                    </b>
+                                                                </p>
+                                                                <div class="description">
+                                                                    <%=item.description%>
+                                                                </div>
+                                                                <div class="pab">
+                                                                    <p class="price">
+                                                                    <h6 style="font-size: 18px;">Rs. <%=item.price%>
+                                                                    </h6>
+                                                                    </p>
+                                                                </div>
+                                                                <button data-item="<%=JSON.stringify(item)%>"
+                                                                    class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                                                    <span>+</span>
+                                                                    <span class="ml-4">Add</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <hr style="width: 680px; margin-left: 310px;">
+                                                        <%}})%>
+
+        </div>
+        <div class="offer">
+            <img src="/img/burger1.png" alt="offer1" class="i1">
+            <img src="/img/DESSERT1.png" alt="offer2" class="i2">
+        </div>
+
+    </div>
+    <!-- <hr> -->
+
+</body>
