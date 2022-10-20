@@ -27,7 +27,7 @@ app.set('eventEmitter', eventEmitter)
 
 // Session config
 app.use(session({
-    secret: process.env.COOKIE_SECRET,
+    secret: process.env.COOKIE_SECRET || "String",
     resave: false,
     store: MongoDbStore.create({
         mongoUrl: process.env.MONGO_CONNECTION_URL,
