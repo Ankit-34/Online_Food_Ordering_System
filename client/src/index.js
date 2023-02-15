@@ -7,6 +7,7 @@ import Features from './component/Features/Features.jsx';
 import OurStory from './component/Our_Story/OurStory.jsx';
 import Schedule from './component/Schedule/Schedule.jsx';
 import ItemCard from './component/ItemCard/ItemCard.jsx';
+import Footer from './component/Footer/Footer.jsx';
 // import 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,6 +24,8 @@ root.render(
     <Schedule />
 
     <ItemCard />
+
+    {/* <Footer /> */}
 
   </React.StrictMode>
 );
